@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head background:"ram.jpeg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page using html and css</title>
+    <style>
+      body{
+        background-image: url("ram.jpeg");
+      }
+            header{
+                width: 100%;
+                height: 100vh;
+                background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2));
+                background-size: cover;
+                font-family: sans-serif;
+            }
+            nav{
+                width: 100%;
+                height: 100px;
+                
+                color:red;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                footer{
+        background-color:black;
+        text-decoration-color:white;
+        color:white;
+        text-align-last: auto;
+    }
+            }
+            .logo{
+                font-size: 2em;
+                letter-spacing: 2px;
+            }
+            .menu a{
+                text-decoration: none;
+                color: white;
+                padding: 10px 20px;
+                font-size: 20px;
+                position:relative;
+
+            }
+            .menu a:before{
+                content: "";
+                position: absolute;
+                top:0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+                border-bottom:2px solid red;
+                transition: 0.4s linear;
+            }
+            .menu a:hover:before{
+                width: 90%;
+            .Get started a{
+                text-decoration: none;
+                color: peru;
+                padding: 10px 20px;
+                font-size: 20px;
+                background: greenyellow;
+                border border-radius: 8px;
+                transition: 0.4s;
+
+            }
+            .Get started a:hover{
+                background: transparent;
+                border:1px solid yellowgreen;
+            }
+        }
+        .h-txt{
+            max-width: 650px;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: white;
+        }
+        .h-txt span{
+            letter-spacing: 5px;
+        }
+        .h-txt h1{
+            font-size: 3.5em;
+
+        }
+    </style>
+</head>
+<body>
+  <header>
+<nav>
+    <div class="logo">
+    LOGO
+    </div>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#">Our sites</a>
+    </div>
+    <div class="Get started">
+        <a href="#">Get started</a>
+    </div>
+    
+</nav>
+<section class="h-txt">
+    <spam>Enjoy</spam>
+    <h1>Welcome To Landing Page</h1>
+    <footer>
+    
+    <p>2024 Our Company. All rights reserved.</p> 
+    </footer>
+</section>
+  </header>  
+</body>
+</html>
